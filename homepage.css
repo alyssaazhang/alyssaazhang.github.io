@@ -8,6 +8,12 @@
   position: fixed;
   height: 100%;
   overflow: auto;
+  opacity: 0;
+  -webkit-animation: fadein 0.8s ease 0s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.8s ease 0s 1 normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 0.8s ease 0s 1 normal forwards; /* Internet Explorer */
+         -o-animation: fadein 0.8s ease 0s 1 normal forwards; /* Opera < 12.1 */
+            animation: fadein 0.8s ease 0s 1 normal forwards;
 }
 
 /* Sidebar links */
@@ -124,23 +130,53 @@ body, html {
 }
 
 /* Create four equal columns that sits next to each other */
-.column {
+#column1, #column2, #column3, #column4 {
   -ms-flex: 25%;
   /* IE10 */
   flex: 25%;
   max-width: 25%;
   padding: 0 4px;
+  opacity: 0;
 }
 
-.column img {
+#column1 img, #column2 img, #column3 img, #column4 img {
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
 }
 
+#column1 {
+  -webkit-animation: fadein 0.5s ease 0.1s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s ease 0.1s 1 normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s ease 0.1s 1 normal forwards; /* Internet Explorer */
+         -o-animation: fadein 0.5s ease 0.1s 1 normal forwards; /* Opera < 12.1 */
+            animation: fadein 0.5s ease 0.1s 1 normal forwards;
+}
+#column2 {
+  -webkit-animation: fadein 0.5s ease 0.2s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s ease 0.2s 1 normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s ease 0.2s 1 normal forwards; /* Internet Explorer */
+         -o-animation: fadein 0.5s ease 0.2s 1 normal forwards; /* Opera < 12.1 */
+            animation: fadein 0.5s ease 0.2s 1 normal forwards;
+}
+#column3 {
+  -webkit-animation: fadein 0.5s ease 0.4s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s ease 0.4s 1 normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s ease 0.4s 1 normal forwards; /* Internet Explorer */
+         -o-animation: fadein 0.5s ease 0.4s 1 normal forwards; /* Opera < 12.1 */
+            animation: fadein 0.5s ease 0.4s 1 normal forwards;
+}
+#column4 {
+  -webkit-animation: fadein 0.5s ease 0.6s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 0.5s ease 0.6s 1 normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 0.5s ease 0.6s 1 normal forwards; /* Internet Explorer */
+         -o-animation: fadein 0.5s ease 0.6s 1 normal forwards; /* Opera < 12.1 */
+            animation: fadein 0.5s ease 0.6s 1 normal forwards;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 1500px) {
-  .column {
+  #column1, #column2, #column3, #column4 {
     -ms-flex: 50%;
     flex: 50%;
     max-width: 50%;
@@ -149,7 +185,7 @@ body, html {
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1000px) {
-  .column {
+  #column1, #column2, #column3, #column4 {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
@@ -158,4 +194,33 @@ body, html {
 
 * {
   box-sizing: border-box;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
 }
