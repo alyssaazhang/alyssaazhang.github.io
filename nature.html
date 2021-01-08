@@ -5,8 +5,9 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alyssa Zhang - Photographer</title>
+  <title>Alyssa Zhang</title>
   <link rel="stylesheet" href="nature.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -15,12 +16,15 @@
 
 <body>
   <div class="sidebar">
-    <a href="homepage.html"><img class="mylogo" src="logo/my_logo.png"></a>
-    <a href="homepage.html">home</a>
-    <a href="about.html">about</a>
-    <a href="collections.html">collections</a>
+    <a href="homepage.html">
+      <img class="mylogo" src="logo/my_logo2.png" title="home"></a>
+    <a href="about.html">about + resume</a>
+    <a href="#projects">coding projects</a>
+    <button class="dropdown-btn">photo collections
+      <i class="material-icons">expand_more</i>
+    </button>
     <div class="collections">
-      <a class="active" href="nature.html">nature</a>
+      <a /*class="active"*/ href="nature.html">nature</a>
       <a href="cities.html">cities</a>
     </div>
     <a href="#contact">contact</a>
@@ -28,26 +32,27 @@
 
   <!-- Page content -->
   <div class="content">
+    <h1> nature </h1>
     <div class="row">
-      <div class="column">
-        <img src="img/venice.jpg">
-        <img src="img/crane.jpg">
+      <div id="column1">
+        <img src="img/park.jpg">
+        <img src="img/crane.jpg"> <!--crane is stupid and loads slower-->
         <img src="img/victoria.jpg">
         <img src="img/flower.jpg">
       </div>
-      <div class="column">
-        <img src="img/ante.jpg">
+      <div id="column2">
+        <img src="img/beach.jpg">
         <img src="img/water.jpg">
         <img src="img/mount.jpg">
         <img src="img/sunset.jpg">
       </div>
-      <div class="column">
+      <div id="column3">
         <img src="img/gc.jpg">
         <img src="img/nyc.jpg">
         <img src="img/rose.jpg">
         <img src="img/clam.jpg">
       </div>
-      <div class="column">
+      <div id="column4">
         <img src="img/road.jpg">
         <img src="img/lighthouse.jpg">
         <img src="img/yosemite.jpg">
@@ -71,3 +76,20 @@
     </div>
   </div>
 </body>
+
+<script>
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+</script>
