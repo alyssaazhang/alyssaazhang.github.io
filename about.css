@@ -151,6 +151,14 @@ body, html {
   scroll-behavior: smooth;
 }
 
+.me {
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 3px;
+  padding-top: 5px;
+  width: 200px;
+  height: auto;
+}
 .collections {
   display: none;
   margin-top: -8px;
