@@ -156,30 +156,13 @@ body, html {
   margin-right: 15px;
   margin-bottom: 3px;
   padding-top: 5px;
-  width: 200px;
+  width: 400px;
   height: auto;
-}
-.collections {
-  display: none;
-  margin-top: -8px;
-}
-
-.collections a {
-  font-size: 16px;
-  color: #595959;
-  padding-left: 40px;
-  background: linear-gradient(to right, black, black 50%, #595959 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 0.9s ease-out;
-  cursor: pointer;
 }
 
 p {
   font-family: 'Karla', sans-serif;
+  font-size: 18px;
   color: black;
   opacity: 0;
   -webkit-animation: fadein 0.8s ease 1.8s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
@@ -193,14 +176,15 @@ p {
 #hi {
   white-space: nowrap;
   overflow: hidden;
-  font-size: 18px;
+  font-size: 22px;
   opacity: 100;
   animation: animated-text 1.5s steps(40,end) 0s 1 normal both;
 }
+
 #description {
   white-space: nowrap;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 24px;
   opacity: 100;
   animation: animated-text 2s steps(50,end) 0.6s 1 normal both;
 }

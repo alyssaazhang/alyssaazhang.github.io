@@ -48,7 +48,6 @@ a:not(.active), button:not(.active) {
 
 /* Links on mouse-over */
 a:hover:not(.active), button:hover:not(.active) {
-  color: #494949;
   background-position: 0 100%;
 }
 
@@ -84,27 +83,6 @@ a:hover:not(.active), button:hover:not(.active) {
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 700px) {
-  .sidebar a, button {
-    text-align: center;
-    padding: 8px 20px;
-  }
-}
-
-@media screen and (max-width: 610px) {
-  .sidebar a, button {
-    text-align: center;
-    padding: 8px 50px;
-  }
-}
-
-@media screen and (max-width: 606px) {
-  .sidebar a, button {
-    text-align: center;
-    padding: 8px 40px;
-  }
-}
-
-@media screen and (max-width: 570px) {
   .sidebar a, button {
     text-align: center;
     padding: 8px 20px;
@@ -161,25 +139,6 @@ h1 {
             animation: fadein 0.8s ease 0s 1 normal forwards;
 }
 
-.collections {
-  display: none;
-  margin-top: -8px;
-}
-
-.collections a {
-  font-size: 16px;
-  color: #595959;
-  padding-left: 40px;
-  background: linear-gradient(to right, black, black 50%, #595959 50%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-size: 200% 100%;
-  background-position: 100%;
-  transition: background-position 0.9s ease-out;
-  cursor: pointer;
-}
-
 .row {
   display: -ms-flexbox;
   /* IE10 */
@@ -207,32 +166,32 @@ h1 {
 }
 
 #column1 {
-  -webkit-animation: fadein 0.5s ease 0.1s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.5s ease 0.1s 1 normal forwards; /* Firefox < 16 */
-        -ms-animation: fadein 0.5s ease 0.1s 1 normal forwards; /* Internet Explorer */
-         -o-animation: fadein 0.5s ease 0.1s 1 normal forwards; /* Opera < 12.1 */
-            animation: fadein 0.5s ease 0.1s 1 normal forwards;
+  -webkit-animation: fadein 1.0s ease 0.2s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.0s ease 0.2s 1 normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 1.0s ease 0.2s 1 normal forwards; /* Internet Explorer */
+         -o-animation: fadein 1.0s ease 0.2s 1 normal forwards; /* Opera < 12.1 */
+            animation: fadein 1.0s ease 0.2s 1 normal forwards;
 }
 #column2 {
-  -webkit-animation: fadein 0.5s ease 0.2s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.5s ease 0.2s 1 normal forwards; /* Firefox < 16 */
-        -ms-animation: fadein 0.5s ease 0.2s 1 normal forwards; /* Internet Explorer */
-         -o-animation: fadein 0.5s ease 0.2s 1 normal forwards; /* Opera < 12.1 */
-            animation: fadein 0.5s ease 0.2s 1 normal forwards;
+  -webkit-animation: fadein 1.0s ease 0.4s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.0s ease 0.4s 1 normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 1.0s ease 0.4s 1 normal forwards; /* Internet Explorer */
+         -o-animation: fadein 1.0s ease 0.4s 1 normal forwards; /* Opera < 12.1 */
+            animation: fadein 1.0s ease 0.4s 1 normal forwards;
 }
 #column3 {
-  -webkit-animation: fadein 0.5s ease 0.4s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.5s ease 0.4s 1 normal forwards; /* Firefox < 16 */
-        -ms-animation: fadein 0.5s ease 0.4s 1 normal forwards; /* Internet Explorer */
-         -o-animation: fadein 0.5s ease 0.4s 1 normal forwards; /* Opera < 12.1 */
-            animation: fadein 0.5s ease 0.4s 1 normal forwards;
+  -webkit-animation: fadein 1.0s ease 0.6s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.0s ease 0.6s 1 normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 1.0s ease 0.6s 1 normal forwards; /* Internet Explorer */
+         -o-animation: fadein 1.0s ease 0.6s 1 normal forwards; /* Opera < 12.1 */
+            animation: fadein 1.0s ease 0.6s 1 normal forwards;
 }
 #column4 {
-  -webkit-animation: fadein 0.5s ease 0.6s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 0.5s ease 0.6s 1 normal forwards; /* Firefox < 16 */
-        -ms-animation: fadein 0.5s ease 0.6s 1 normal forwards; /* Internet Explorer */
-         -o-animation: fadein 0.5s ease 0.6s 1 normal forwards; /* Opera < 12.1 */
-            animation: fadein 0.5s ease 0.6s 1 normal forwards;
+  -webkit-animation: fadein 1.0s ease 0.7s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 1.0s ease 0.7s 1 normal forwards; /* Firefox < 16 */
+        -ms-animation: fadein 1.0s ease 0.7s 1 normal forwards; /* Internet Explorer */
+         -o-animation: fadein 1.0s ease 0.7s 1 normal forwards; /* Opera < 12.1 */
+            animation: fadein 1.0s ease 0.7s 1 normal forwards;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
