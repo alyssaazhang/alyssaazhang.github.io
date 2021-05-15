@@ -1,5 +1,5 @@
 # alyssaazhang.github.io
 
-Personal/photography website
+Personal/photography website :)
 
 https://alyssaazhang.github.io/
