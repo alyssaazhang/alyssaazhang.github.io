@@ -49,11 +49,11 @@ p {
   color: black;
   opacity: 0;
   line-height: 1.5;
-  -webkit-animation: fadein 0.8s ease 2s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 0.8s ease 2s 1 normal forwards; /* Firefox < 16 */
-  -ms-animation: fadein 0.8s ease 2s 1 normal forwards; /* Internet Explorer */
-  -o-animation: fadein 0.8s ease 2s 1 normal forwards; /* Opera < 12.1 */
-  animation: fadein 0.8s ease 2s 1 normal forwards;
+  -webkit-animation: fadein 0.6s ease 2s 1 normal forwards; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 0.6s ease 2s 1 normal forwards; /* Firefox < 16 */
+  -ms-animation: fadein 0.6s ease 2s 1 normal forwards; /* Internet Explorer */
+  -o-animation: fadein 0.6s ease 2s 1 normal forwards; /* Opera < 12.1 */
+  animation: fadein 0.6s ease 2s 1 normal forwards;
 }
 
 /* Animation */
@@ -63,7 +63,7 @@ p {
   font-size: 22px;
   line-height: normal;
   opacity: 100;
-  animation: animated-text 1.5s steps(40, end) 0s 1 normal both;
+  animation: animated-text 1.3s steps(40, end) 0s 1 normal both;
 }
 
 #description {
@@ -72,7 +72,7 @@ p {
   font-size: 24px;
   line-height: normal;
   opacity: 100;
-  animation: animated-text 2s steps(50, end) 0.6s 1 normal both;
+  animation: animated-text 1.8s steps(50, end) 0.6s 1 normal both;
 }
 
 /* text animation */
